@@ -1,0 +1,10 @@
+.upper-layer{
+    opacity: 0;
+    transition: all 0.4s;
+}
+.upper-layer:hover{
+    opacity: 0.9;
+}
+i{
+    cursor: pointer;
+}

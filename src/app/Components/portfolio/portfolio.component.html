@@ -1,0 +1,75 @@
+<div class="vh-100 d-flex flex-column justify-content-center align-items-center position-relative">
+    <app-star class="text-second" [heading] = "portfolioHeading" [bgWhite]="bgWhite"></app-star>
+    <div class="container my-3">
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div (click)="open('poert1.png')" class="inner rounded-3 overflow-hidden position-relative">
+                    <div class="card-image">
+                        <img class="w-100" src="assets/Images/poert1.png" alt="">
+                    </div>
+                    <div class="upper-layer position-absolute top-0 start-0 bg-main w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="open('port2.png')" class="inner rounded-3 overflow-hidden position-relative">
+                    <div class="card-image">
+                        <img class="w-100" src="assets/Images/port2.png" alt="">
+                    </div>
+                    <div class="upper-layer position-absolute top-0 start-0 bg-main w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="open('port3.png')" class="inner rounded-3 overflow-hidden position-relative">
+                    <div class="card-image">
+                        <img class="w-100" src="assets/Images/port3.png" alt="">
+                    </div>
+                    <div class="upper-layer position-absolute top-0 start-0 bg-main w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="open('poert1.png')" class="inner rounded-3 overflow-hidden position-relative">
+                    <div class="card-image">
+                        <img class="w-100" src="assets/Images/poert1.png" alt="">
+                    </div>
+                    <div class="upper-layer position-absolute top-0 start-0 bg-main w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="open('port2.png')" class="inner rounded-3 overflow-hidden position-relative">
+                    <div class="card-image">
+                        <img class="w-100" src="assets/Images/port2.png" alt="">
+                    </div>
+                    <div class="upper-layer position-absolute top-0 start-0 bg-main w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="open('port3.png')" class="inner rounded-3 overflow-hidden position-relative">
+                    <div class="card-image">
+                        <img class="w-100" src="assets/Images/port3.png" alt="">
+                    </div>
+                    <div class="upper-layer position-absolute top-0 start-0 bg-main w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="isClicked==true" class="selected-image position-fixed start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center bg-primary bg-opacity-25">
+        <div class="position-relative w-50 bg-warning rounded-3 overflow-hidden">
+            <img class="w-100" [src]="imageSrc" alt="">
+            <i (click)="close()" class="fa-regular fa-circle-xmark position-absolute top-0 end-0 m-4 text-white fa-2x"></i>
+        </div>
+    </div>
+
+</div>
